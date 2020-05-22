@@ -118,6 +118,9 @@
       padding-left: 10px;
     }
   </style>
+  <script>
+    const classification = ["fish", "reptile", "bird"];
+  </script>
 </head>
 
 <body>
@@ -125,190 +128,27 @@
     <div class="forms">
 
       <div class="main-form">
-        <div class="form">
 
-          <label>Entity</label>
+        <div class="form">
+          <label>Classification</label>
           <div class="field">
-            <select data-field="entity" name="entity_main">
+            <select name="classification_leader">
               <option>Select one</option>
-              <option>AXA SIGORTA /TR</option>
-              <option>AXA MANDIRI /ID</option>
-              <option selected=selected>AXA WINTERTHUR /CH</option>
-              <option>AXA COLPATRIA /CO</option>
-              <option>AXA SEGUROS /ES</option>
-              <option>AXA MALAYSIA /MY</option>
-              <option>AXA HONG-KONG /HK</option>
-              <option>AXA SINGAPORE /SG</option>
-              <option>AXA PHILIPPINES /PH</option>
-              <option>AXA THAILAND /TH</option>
-              <option>AXA TIANPING /TN</option>
             </select>
             <div class="persist-lock">
-              🔑<input type="checkbox" name="entity_persist" checked />
+              🔑<input type="checkbox" name="classification_persist" />
             </div>
           </div>
-
-          <label>Expected Documents</label>
-          <div class="field">
-            <div class="checklist">
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_main" value="all" /> <label>Select
-                  all</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_main" value="1" checked />
-                <label>Technical Accounts</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_main" value="2" />
-                <label>Premium bordereaux</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_main" value="3" />
-                <label>Claims borderaux</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_main" value="4" checked />
-                <label>Sliding scale commission calculation sheet</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_main" value="5" />
-                <label>Profit sharing calculation sheet</label>
-              </div>
-            </div>
-            <div class="persist-lock">
-              🔑<input type="checkbox" name="expected_docs_persist" />
-            </div>
-
-          </div>
-
-          <label>First name</label>
-          <div class="field">
-            <input type="text" name="first_name_main" data-field="first_name" value="Stephen" />
-            <div class="persist-lock">
-              🔑<input type="checkbox" name="first_name_persist" />
-            </div>
-          </div>
-
-          <label>Last name</label>
-          <div class="field">
-            <input type="text" name="last_name_main" data-field="last_name" value="Farrugia" />
-            <div class="persist-lock">
-              🔑<input type="checkbox" name="last_name_persist" />
-            </div>
-          </div>
-
-          <label>Address</label>
-          <div class="field">
-            <input type="text" name="address_main" data-field="address" value="5 Sydney Street" />
-            <div class="persist-lock">
-              🔑<input type="checkbox" name="address_persist" />
-            </div>
-          </div>
-
-          <label>Comment</label>
-          <div class="field">
-            <textarea name="comment_main" data-field="comment">Hello world</textarea>
-            <div class="persist-lock">
-              🔑<input type="checkbox" name="comment_persist" />
-            </div>
-          </div>
-
         </div>
+
+
+
       </div>
 
       <div class="sub-forms">
-        <div class="form" data-form="1">
-
-          <label>Entity</label>
-          <div class="field">
-            <div class="duplicate-lock">
-              🔗<input type="checkbox" name="entity_duplicate_1" checked />
-            </div>
-            <select data-field="entity" name="entity_1">
-              <option>Select one</option>
-              <option>AXA SIGORTA /TR</option>
-              <option>AXA MANDIRI /ID</option>
-              <option>AXA WINTERTHUR /CH</option>
-              <option>AXA COLPATRIA /CO</option>
-              <option>AXA SEGUROS /ES</option>
-              <option>AXA MALAYSIA /MY</option>
-              <option>AXA HONG-KONG /HK</option>
-              <option>AXA SINGAPORE /SG</option>
-              <option>AXA PHILIPPINES /PH</option>
-              <option>AXA THAILAND /TH</option>
-              <option>AXA TIANPING /TN</option>
-            </select>
-          </div>
-
-          <label>Expected Documents</label>
-          <div class="field">
-            <div class="duplicate-lock">
-              🔗<input type="checkbox" name="expected_docs_duplicate_1" checked />
-            </div>
-            <div class="checklist">
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_1" value="all" /> <label>Select
-                  all</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_1" value="1" />
-                <label>Technical Accounts</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_1" value="2" />
-                <label>Premium bordereaux</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_1" value="3" />
-                <label>Claims borderaux</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_1" value="4" />
-                <label>Sliding scale commission calculation sheet</label>
-              </div>
-              <div class="checklist-item">
-                <input type="checkbox" data-field="expected_docs" name="expected_docs_1" value="5" />
-                <label>Profit sharing calculation sheet</label>
-              </div>
-            </div>
-          </div>
-
-          <label>First name</label>
-          <div class="field">
-            <div class="duplicate-lock">
-              🔗<input type="checkbox" name="first_name_duplicate_1" checked />
-            </div>
-            <input type="text" name="first_name_1" data-field="first_name" />
-          </div>
-
-          <label>Last name</label>
-          <div class="field">
-            <div class="duplicate-lock">
-              🔗<input type="checkbox" name="last_name_duplicate_1" />
-            </div>
-            <input type="text" name="last_name_1" data-field="last_name" />
-          </div>
-
-          <label>Address</label>
-          <div class="field">
-            <div class="duplicate-lock">
-              🔗<input type="checkbox" name="address_duplicate_1" checked />
-            </div>
-            <input type="text" name="address_1" data-field="address" />
-          </div>
-
-          <label>Comment</label>
-          <div class="field">
-            <div class="duplicate-lock">
-              🔗<input type="checkbox" name="comment_duplicate_1" checked />
-            </div>
-            <textarea name="comment_1" data-field="comment"></textarea>
-          </div>
-
-        </div>
 
       </div>
+
     </div>
 
   </div>
